@@ -2,4 +2,11 @@ const customLogger = obj => {
   console.log(obj);
 }
 
-module.exports.customLogger = customLogger;
+const customMessage = () => {
+  console.log('I like pizza! 🍕');
+}
+
+module.exports = {
+  customLogger,
+  customMessage
+};
